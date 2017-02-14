@@ -1,5 +1,24 @@
+/* Menor tamanho de tela */
 .cartao {
   background-color: #EBEF40;
   margin: 16px;
   padding: 16px;
+}
+.cartao-conteudo {
+  text-align: left;
+}
+
+/* Crescente do tamanho de telas */
+@media (min-width: 560px) {
+  .mural {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; /* Fallback para flex */
+  }
+  .cartao {
+    flex-basis: 190px;
+    flex-grow: 1;
+    width: 190px; /* Fallback para flex */
+    display: inline-block; /* Fallback para flex */
+  }
 }

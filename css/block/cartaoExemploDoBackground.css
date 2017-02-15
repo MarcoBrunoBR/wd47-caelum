@@ -1,8 +1,0 @@
-.cartao {
-  background: url('../../image/gato.jpg');
-  padding: 16px;
-  margin: 16px;
-}
-.cartaoSemImagem {
-  background: url('../../image/gato.jpg') red 20px 20px no-repeat;
-}

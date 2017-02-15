@@ -1,0 +1,8 @@
+.error {
+  display: block;
+  text-align: center;
+  font-size: .9em;
+  color: #C0392B;
+  margin-top: 5px;
+  font-family: 'Lato';
+}

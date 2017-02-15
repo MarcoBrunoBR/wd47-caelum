@@ -6,8 +6,10 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/block/error.css">
   <link rel="stylesheet" href="css/block/cabecalho.css">
   <link rel="stylesheet" href="css/block/opcoesDaPagina.css">
+  <link rel="stylesheet" href="css/block/novoCartao.css">
   <link rel="stylesheet" href="css/block/mural.css">
   <link rel="stylesheet" href="css/block/cartao.css">
   <link rel="stylesheet" href="css/block/opcoesDoCartao.css">
@@ -24,6 +26,13 @@
       </button>
     </nav>
   </header>
+
+  <!-- form.novoCartao.container>textarea.novoCartao-conteudo[name=novoCartao-conteudo placeholder="Digite aqui"]+input.novoCartao-salvar[type=submit value=Salvar] -->
+  <form action="" class="novoCartao container">
+    <textarea name="novoCartao-conteudo" id="" cols="30" rows="10" class="novoCartao-conteudo" placeholder="Digite aqui"></textarea>
+    <!-- aqui vai vir um span de erro criado pelo nosso JS -->
+    <input type="submit" class="novoCartao-salvar" value="Salvar">
+  </form>
 
   <section class="mural container">
     <div id="cartao_1" class="cartao">
@@ -60,5 +69,6 @@
 
   <script src="javascript/block/cabecalho.js"></script>
   <script src="javascript/block/cartao.js"></script>
+  <script src="javascript/block/novoCartao.js"></script>
 </body>
 </html>

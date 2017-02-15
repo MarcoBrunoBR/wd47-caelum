@@ -1,0 +1,16 @@
+@media (min-width: 560px) {
+  .mural {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; /* Fallback para flex */
+  }
+  .mural--linhas {
+    flex-direction: column;
+  }
+
+  .mural--linhas .cartao {
+    flex-basis: auto;
+    width: auto;
+    display: block;
+  }
+}

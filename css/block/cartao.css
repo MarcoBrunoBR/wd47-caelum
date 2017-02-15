@@ -10,11 +10,6 @@
 
 /* Crescente do tamanho de telas */
 @media (min-width: 560px) {
-  .mural {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center; /* Fallback para flex */
-  }
   .cartao {
     flex-basis: 190px;
     flex-grow: 1;

@@ -1,0 +1,40 @@
+#mudaLayout {
+  display: none;
+}
+
+.opcoesDaPagina {
+	display: inline-block;
+	vertical-align: middle;
+
+	font-size: 1rem;
+}
+
+.opcoesDaPagina-opcao {
+	font-size: 1em;
+	vertical-align: middle;
+	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}
+
+.opcoesDaPagina-opcao + .opcoesDaPagina-opcao {
+	margin-left: 1em;
+}
+
+.opcoesDaPagina-botao {
+	padding: .5em;
+  width: 80px;
+	border: none;
+	background: rgba(0,0,0,.25);
+	color: white;
+  cursor: pointer;
+}
+
+.opcoesDaPagina-opcao#busca {
+	border: none;
+	padding: .2em;
+}
+
+@media (min-width: 560px) {
+  #mudaLayout {
+    display: block;
+  }
+}

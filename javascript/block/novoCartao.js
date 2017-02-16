@@ -9,7 +9,24 @@ $novoCartaoSalvar.addEventListener('click', function (event) {
     $error.textContent = 'Preecha o campo acima'
 
     $novoCartao.insertBefore($error, $novoCartaoSalvar)
+
+    window.requestAnimationFrame(function() {
+      setTimeout(function () {
+        $error.classList.add('error--aparece')
+      }, 100)
+    })
   }
 
   event.preventDefault()
+})
+
+$novoCartaoConteudo.addEventListener('input', function() {
+  var $error = document.querySelector('.error')
+  if ($error) {
+    $error.classList.add('error--some')
+
+    $error.addEventListener('transitionend', () => {
+      $error.remove()
+    })
+  }
 })

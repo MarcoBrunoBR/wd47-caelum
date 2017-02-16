@@ -5,4 +5,15 @@
   color: #C0392B;
   margin-top: 5px;
   font-family: 'Lato';
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.error--aparece {
+  opacity: 1;
+}
+
+.error--some {
+  opacity: 0;
+
 }

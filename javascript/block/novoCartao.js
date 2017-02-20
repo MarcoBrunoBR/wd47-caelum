@@ -51,9 +51,9 @@ $novoCartao.addEventListener('submit', function(event) {
 
     } else {
       novoConteudo += item.replace(/^\*\*/, '<b>')
-                                          .replace(/\*\*$/, '</b>')
-                                          .replace(/^\*/, '<em>')
-                                          .replace(/\*$/, '</em>') + ' '
+                          .replace(/\*\*$/, '</b>')
+                          .replace(/^\*/, '<em>')
+                          .replace(/\*$/, '</em>') + ' '
     }
 
   })

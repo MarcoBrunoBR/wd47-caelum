@@ -1,3 +1,4 @@
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 @media (min-width: 560px) {
   .mural {
     display: flex;
@@ -12,5 +13,18 @@
     flex-basis: auto;
     width: auto;
     display: block;
+  }
+}
+
+@media (min-width: 610px) {
+  .mural {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 900px) {
+  .mural {
+    align-items: center;
+    font-size: 1.3rem;
   }
 }

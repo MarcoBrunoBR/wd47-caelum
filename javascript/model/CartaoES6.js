@@ -1,3 +1,4 @@
+/*es6-features.org/ */
 class Cartao {
   constructor(conteudo, $todosOsCartoes) {
     this.id = 1
@@ -20,18 +21,18 @@ class Cartao {
 
   criaId($todosOsCartoes) {
     if ($todosOsCartoes.length) {
-      var $botaoDoUltimoCartao = $todosOsCartoes[$todosOsCartoes.length - 1]
+      let $botaoDoUltimoCartao = $todosOsCartoes[$todosOsCartoes.length - 1]
 
       this.id = parseInt($botaoDoUltimoCartao.getAttribute('data-ref')) + 1
     }
   }
 
   criaConteudo(conteudo) {
-    var conteudo = conteudo.trim().replace(/\n/g, ' <br> ')
-    var palavras = conteudo.split(' ')
-    var novoConteudo = ''
+    let conteudo = conteudo.trim().replace(/\n/g, ' <br> ')
+    let palavras = conteudo.split(' ')
+    let novoConteudo = ''
 
-    palavras.forEach(function(item, index) {
+    palavras.map(function(item) {
       if (item == '<br>') {
         novoConteudo += item.replace(/^\*\*/, '<b>')
                             .replace(/\*\*$/, '</b>')

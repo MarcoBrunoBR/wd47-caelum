@@ -31,38 +31,13 @@ $novoCartaoConteudo.addEventListener('input', function() {
 })
 
 $novoCartao.addEventListener('submit', function(event) {
-  var $cartoes = document.querySelectorAll('.cartao')
-  var id = 1
-  var conteudo = $novoCartaoConteudo.value.trim().replace(/\n/g, ' <br> ')
-  var novoConteudo = ''
-
-  var palavras = conteudo.split(' ')
-
-  if ($cartoes.length) {
-    id = $cartoes[$cartoes.length - 1].querySelector('.opcoesDoCartao-remove').getAttribute('data-ref') + 1
-  }
-
-  palavras.forEach(function(item, index) {
-    if (item == '<br>') {
-      novoConteudo += item.replace(/^\*\*/, '<b>')
-                          .replace(/\*\*$/, '</b>')
-                          .replace(/^\*/, '<em>')
-                          .replace(/\*$/, '</em>')
-
-    } else {
-      novoConteudo += item.replace(/^\*\*/, '<b>')
-                          .replace(/\*\*$/, '</b>')
-                          .replace(/^\*/, '<em>')
-                          .replace(/\*$/, '</em>') + ' '
-    }
-
-  })
-
-  var novoCartao = criaCartao(id, novoConteudo);
-
-  $mural.innerHTML += novoCartao
-
   event.preventDefault()
+  var $cartoes = document.querySelectorAll('.cartao')
+  var conteudo = $novoCartaoConteudo.value
+
+  var cartao = new Cartao(conteudo)
+
+  $mural.innerHTML += cartao.novo($cartoes)
 })
 
 $mural.addEventListener('click', function(event) {

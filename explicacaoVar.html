@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="var">
+    <li>First</li>
+    <li>Second</li>
+    <li>Last</li>
+  </ul>
+
+  <ul class="let">
+    <li>First</li>
+    <li>Second</li>
+    <li>Last</li>
+  </ul>
+
+  <script>
+    var $lis = document.querySelectorAll('.var li')
+    for (var index = 0; index < $lis.length; index++) {
+      console.log('[var] Passando', index)
+
+      $lis[index].addEventListener('click', function() {
+        console.log('[var] Clicou', index)
+      })
+    }
+
+    console.log('[var] Fora do for', index)
+
+    let $lis = document.querySelectorAll('.let li')
+    for (let index = 0; index < $lis.length; index++) {
+      console.log('[let] Passando', index)
+
+      $lis[index].addEventListener('click', function() {
+        console.log('[let] Clicou', index)
+      })
+    }
+
+    console.log('[let] Fora do for', index)
+  </script>
+
+
+
+
+
+</body>
+</html>

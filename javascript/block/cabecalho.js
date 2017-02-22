@@ -1,13 +1,17 @@
-var $mudaLayout = document.querySelector('#mudaLayout')
-var $mural = document.querySelector('.mural')
+'use strict';
 
-$mudaLayout.addEventListener('click', function() {
+(function () {
+  var $mudaLayout = document.querySelector('#mudaLayout')
+  var $mural = document.querySelector('.mural')
 
-  $mural.classList.toggle('mural--linhas')
+  $mudaLayout.addEventListener('click', function() {
 
-  if ($mural.classList.contains('mural--linhas')) {
-    $mudaLayout.textContent = 'Colunas'
-  } else {
-    $mudaLayout.textContent = 'Linhas'
-  }
-})
+    $mural.classList.toggle('mural--linhas')
+
+    if ($mural.classList.contains('mural--linhas')) {
+      $mudaLayout.textContent = 'Colunas'
+    } else {
+      $mudaLayout.textContent = 'Linhas'
+    }
+  })
+})()

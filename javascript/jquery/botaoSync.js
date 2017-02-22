@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
   let $sync = $('#sync')
 
@@ -14,7 +16,7 @@
     })
 
     let mural = {
-      usuario : 'marco@gmail.com',
+      usuario : USUARIO,
       cartoes : cartoes
     }
 

@@ -1,3 +1,5 @@
+'use strict';
+
 (function (doc) {
   let $busca = doc.querySelector('#busca')
 

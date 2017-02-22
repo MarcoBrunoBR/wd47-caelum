@@ -1,3 +1,5 @@
+'use strict';
+
 (function (doc) {
   let $ajuda = doc.querySelector('#ajuda')
 

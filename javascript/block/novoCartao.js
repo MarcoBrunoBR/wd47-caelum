@@ -1,3 +1,4 @@
+'use strict';
 //IIFE - Immediately-Invoked Function Expression,
 (function() {
   var $mural = document.querySelector('.mural')

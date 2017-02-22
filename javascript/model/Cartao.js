@@ -1,5 +1,5 @@
 //ES5
-function Cartao(conteudo, $todosOsCartoes) {
+function Cartao(conteudo) {
   this.id = 1
   this.conteudo = conteudo
   this.tamanhoDoCartao = 'cartao--textoPequeno'
@@ -44,7 +44,7 @@ Cartao.prototype.criaId = function($todosOsCartoes) {
   if ($todosOsCartoes.length) {
     var $botaoDoUltimoCartao = $todosOsCartoes[$todosOsCartoes.length - 1]
 
-    this.id = parseInt($botaoDoUltimoCartao.getAttribute('data-ref')) + 1
+    this.id = parseInt($botaoDoUltimoCartao.querySelector('.opcoesDoCartao-remove').getAttribute('data-ref')) + 1
   }
 }
 

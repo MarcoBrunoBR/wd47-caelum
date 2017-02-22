@@ -5,3 +5,7 @@ body {
 .container {
   padding: 0 10%;
 }
+
+.hidden {
+  display: none !important; /* Evite usar important mas precisamos */
+}

@@ -21,6 +21,7 @@
   opacity: 0;
 }
 
+
 /* Crescente do tamanho de telas */
 @media (min-width: 560px) {
   .cartao {
